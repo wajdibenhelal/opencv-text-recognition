@@ -58,65 +58,34 @@ Say what the step will be
 git clone https://github.com/wajdibenhelal/opencv-text-recognition.git
 ```
 
-And
-
-```
-cd opencv-text-recognition
-node RELAY-API/app.js
-```
-
 End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
 Explain how to run the automated tests for this system
 
+```
+cd opencv-text-recognition
+node RELAY-API/app.js
+```
+
 ### Break down into end to end tests
 
 Explain what these tests test and why
 
+for upload the identity card :
 ```
-Give an example
+http://localhost:3003/upload
+  =>profile  => PicPath
 ```
-
-### And coding style tests
-
-Explain what these tests test and why
-
+for open the identity card from the server :
 ```
-Give an example
+http://localhost:3003/upload/picName.jpg
 ```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
+for cheack your data from the server :
+```
+cd PROJECT_PATH
+cat NumberCard.txt
+```
 ## License
-
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
